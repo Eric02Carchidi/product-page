@@ -56,7 +56,7 @@ footer {
 /* Default styling for all screens ends here */
 
 .wrapper {
-  flex-direction: column;
+
 }
 
 .description {
@@ -64,7 +64,7 @@ footer {
   grid-template-columns: 1fr;
 }
 
-.also-browsing {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -75,13 +75,12 @@ footer {
 }
 /* Add media query for tablet */
 
-@media only screen and (width: 768px) {
+@media only screen and (min-width: 768px) {
   .description {
     grid-template-columns: 1fr 1fr;
   }
 
-  .also-browsing {
-    display: grid;
+  .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
@@ -92,18 +91,16 @@ footer {
 }
 /* Add media query for desktop */
 
-@media only screen and (width: 1280px) {
+@media only screen and (min-width: 1280px) {
   .description {
     grid-template-columns: 1fr 1fr;
   }
 
   .also-browsing {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .reviews {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr
   }
 }
