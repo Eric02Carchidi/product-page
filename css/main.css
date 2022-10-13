@@ -55,9 +55,55 @@ footer {
 
 /* Default styling for all screens ends here */
 
+.wrapper {
+  flex-direction: column;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.also-browsing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr
+}
 /* Add media query for tablet */
 
+@media only screen and (width: 768px) {
+  .description {
+    grid-template-columns: 1fr 1fr;
+  }
 
+  .also-browsing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
-
+  .reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+  }
+}
 /* Add media query for desktop */
+
+@media only screen and (width: 1280px) {
+  .description {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .also-browsing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  }
+}
