@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  margin: 0;
-  /* include your font family and default line-height */
+  background-color: #FEF5E7;
+  margin: 1em;
+  padding: 2rem;
 }
 
 img {
@@ -33,6 +34,8 @@ header {
 header nav ul {
   list-style-type: none;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
 }
 
@@ -46,12 +49,51 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a:focus {
   text-decoration: underline;
+  color: #117A65;
+}
+
+h1, h2, h3 {
+  color: #145A32;
+}
+h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description {
+  margin: 1rem;
+  grid-gap: 2em;
+}
+
+.reviews {
+  background-color: #fff;
+}
+
+.also-browsing {
+  padding: 1em;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+}
+
+button {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #145A32;
+  border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+  text-decoration: underline;
+  background-color: #117A65;
 }
 
 footer {
   text-align: center;
+  padding: 3rem;
 }
-
 
 /* Default styling for all screens ends here */
 
@@ -71,7 +113,7 @@ footer {
 
 .reviews {
   display: grid;
-  grid-template-columns: 1fr
+  grid-template-columns: 1fr;
 }
 /* Add media query for tablet */
 
@@ -86,7 +128,7 @@ footer {
 
   .reviews {
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr;
   }
 }
 /* Add media query for desktop */
@@ -96,11 +138,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .also-browsing {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
   .reviews {
-  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr 1fr;
   }
 }
