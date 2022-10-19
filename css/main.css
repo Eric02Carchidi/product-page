@@ -16,6 +16,10 @@ body {
   padding: 2rem;
 }
 
+p, ul, blockquote{
+  font-family: 'DM Sans', sans-serif;
+}
+
 img {
   width: 100%;
 }
@@ -40,7 +44,8 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #000;
+  color: #145A32;
+  font-family: 'Hammersmith', sans-serif;
   font-weight: bold;
   text-decoration: none;
   font-size: 1.25rem;
@@ -49,11 +54,12 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a:focus {
   text-decoration: underline;
-  color: #117A65;
+  color: #7DCEA0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4{
   color: #145A32;
+  font-family: 'Hammersmith One'
 }
 h4 {
   display: flex;
@@ -82,22 +88,40 @@ button {
   border: 2px solid #fff;
   background-color: #145A32;
   border-radius: 5px;
+  font-family: 'DM Sans', sans-serif;
 }
 
 button:hover,
 button:focus {
   text-decoration: underline;
-  background-color: #117A65;
+  background-color: #7DCEA0;
 }
 
 footer {
   text-align: center;
   padding: 3rem;
+  font-family: 'DM San', sans-serif;
 }
 
 /* Default styling for all screens ends here */
 
-.wrapper {
+p, ul, blockquote {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+
+}
+
+h4 {
 
 }
 
