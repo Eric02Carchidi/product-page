@@ -18,6 +18,7 @@ body {
 
 p, ul, blockquote{
   font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
 }
 
 img {
@@ -105,10 +106,6 @@ footer {
 
 /* Default styling for all screens ends here */
 
-p, ul, blockquote {
-  font-size: 1rem;
-}
-
 h1 {
   font-size: 2rem;
 }
@@ -118,11 +115,11 @@ h2 {
 }
 
 h3 {
-
+  font-size: 1.25rem;
 }
 
 h4 {
-
+  font-size: 1rem;
 }
 
 .description {
@@ -154,6 +151,25 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   }
+
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+
 }
 /* Add media query for desktop */
 
